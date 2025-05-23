@@ -1,5 +1,9 @@
+from __future__ import annotations
+from typing import TYPE_CHECKING
 from contextvars import ContextVar
-from .core import SimpleT9n
+
+if TYPE_CHECKING:
+    from .core import SimpleT9n
 
 
 ctx_aiogram_t9n_lang: ContextVar[str] = ContextVar("aiogram_t9n_lang", default="en")

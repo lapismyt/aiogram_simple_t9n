@@ -1,8 +1,12 @@
+from __future__ import annotations
+from typing import TYPE_CHECKING
 import json
 from pathlib import Path
-from .middleware import SimpleT9nMiddleware
 from .context import ctx_aiogram_t9n_lang
 from functools import lru_cache
+
+if TYPE_CHECKING:
+    from .middleware import SimpleT9nMiddleware
 
 
 class LangMessages:
