@@ -1,0 +1,21 @@
+[project]
+name = "aiogram-simple-t9n"
+version = "0.1.0"
+description = "Oversimplified library for adding translations to Aiogram 3 bots"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "aiogram>=3.20.0.post0",
+]
+
+[build-system]
+requires = ["setuptools>=42"]
+build-backend = "setuptools.build_meta"
+
+[dependency-groups]
+dev = [
+    "pytest>=8.3.5",
+    "pytest-asyncio>=0.26.0",
+    "python-dotenv>=1.1.0",
+    "ruff>=0.11.10",
+]
