@@ -96,4 +96,5 @@ class SimpleT9n:
         return message.format(*args, **kwargs)
 
     def get_middleware(self) -> SimpleT9nMiddleware:
+        from .middleware import SimpleT9nMiddleware
         return SimpleT9nMiddleware(self)
