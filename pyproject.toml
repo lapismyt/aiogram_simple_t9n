@@ -1,6 +1,6 @@
 [project]
 name = "aiogram-simple-t9n"
-version = "0.1.0"
+version = "0.1.1"
 description = "Oversimplified library for adding translations to Aiogram 3 bots"
 readme = "README.md"
 requires-python = ">=3.12"
